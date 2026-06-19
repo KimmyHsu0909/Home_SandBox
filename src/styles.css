@@ -134,3 +134,43 @@ body::after {
   cursor: default;
   opacity: 0.55;
 }
+
+@media (max-width: 760px) {
+  #app {
+    left: 0;
+    bottom: 220px;
+  }
+
+  body::after {
+    top: 10px;
+    right: 10px;
+    max-width: calc(100vw - 20px);
+    font-size: 12px;
+  }
+
+  .chat-panel {
+    inset: auto 0 0 0;
+    width: 100%;
+    height: 220px;
+    border-top: 1px solid rgba(43, 38, 30, 0.18);
+    border-right: 0;
+    box-shadow: 0 -8px 24px rgba(52, 45, 34, 0.12);
+  }
+
+  .chat-panel__header {
+    padding: 10px 12px 8px;
+    font-size: 14px;
+  }
+
+  .chat-panel__messages {
+    padding: 8px 12px 6px;
+  }
+
+  .chat-panel__hint {
+    padding: 6px 12px;
+  }
+
+  .chat-panel__form {
+    padding: 8px 12px 10px;
+  }
+}
